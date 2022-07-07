@@ -1,7 +1,6 @@
-@import 'parts/container';
-@import 'parts/reset';
-@import 'parts/variables';
-@import 'parts/header';
+
+@import './parts/variables';
+@import './parts/header';
 
 body {
     background-color: pink;
