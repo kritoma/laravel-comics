@@ -1,3 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);.container {
+  max-width: 81.25rem;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary: #0282f9;
   --container-md: 81.25rem;
@@ -5,13 +16,82 @@
 
 .header_top {
   background-color: var(--color-primary);
+  padding: 0.5rem;
 }
 .header_top .content_header_top {
   display: flex;
   justify-content: flex-end;
   gap: 1.25rem;
+  color: white;
+  font-size: 12px;
+}
+
+.header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.header_bottom nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.header_bottom .search_bar {
+  border-bottom: 0.125rem solid var(--color-primary);
+}
+.header_bottom .search_bar input {
+  border: none;
 }
 
 body {
-  background-color: pink;
+  font-family: "Lato", sans-serif;
+}
+
+.hero {
+  background-image: url("../img/jumbotron.jpg");
+  min-height: 25rem;
+}
+
+.current_series {
+  background-color: #1c1c1c;
+}
+.current_series .btn_current {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(-50%);
+  background-color: var(--color-primary);
+  padding: 0.625rem 2.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.current_series .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 40px 0;
+}
+.current_series .cards .card {
+  width: calc(16.6666666667% - 20px);
+  color: white;
+}
+.current_series .cards .card img {
+  width: 100%;
+}
+.current_series .div_btn {
+  text-align: center;
+}
+.current_series .div_btn .btn_load {
+  background-color: var(--color-primary);
+  padding: 0.625rem 2.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.relative {
+  position: relative;
 }

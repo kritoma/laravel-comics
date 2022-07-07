@@ -1,0 +1,53 @@
+.current_series {
+    background-color: #1c1c1c;
+    
+
+    .btn_current {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translateY(-50%);
+        background-color: var(--color-primary);
+        padding: .625rem 2.50rem;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        list-style: none;
+        padding: 40px 0;
+
+        .card {
+            width: calc(100% / 6 - 20px);
+            color: white;
+            
+            img {
+                width: 100%;
+            }
+        
+        }
+       
+    }
+
+    .div_btn {
+        text-align: center;
+
+        .btn_load {
+            background-color: var(--color-primary);
+            padding: .625rem 2.50rem;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+.relative {
+    position: relative;
+}
