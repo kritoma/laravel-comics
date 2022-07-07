@@ -90,8 +90,29 @@ body {
   border: none;
   color: white;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .relative {
   position: relative;
+}
+
+.digital_comics {
+  background-color: var(--color-primary);
+}
+.digital_comics ul {
+  display: flex;
+  list-style: none;
+  gap: 2.25rem;
+  padding: 30px 0;
+}
+.digital_comics ul li {
+  display: flex;
+  align-items: center;
+  width: calc(20% - 2.25rem);
+  color: white;
+  gap: 1rem;
+}
+.digital_comics ul li img {
+  height: 60px;
 }
