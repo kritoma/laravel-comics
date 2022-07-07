@@ -1,0 +1,28 @@
+.footer_bottom {
+    background-color: #303030;
+    padding: 30px;
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border: 1px solid var(--color-primary);
+            padding: .625rem 1.25rem;
+            background-color: #303030;
+            color: white;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: .9375rem;
+
+            div {
+                color: var(--color-primary);
+                font-weight: bold;
+            }
+        }
+    }
+}

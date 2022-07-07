@@ -116,3 +116,28 @@ body {
 .digital_comics ul li img {
   height: 60px;
 }
+
+.footer_bottom {
+  background-color: #303030;
+  padding: 30px;
+}
+.footer_bottom .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_bottom .social button {
+  border: 1px solid var(--color-primary);
+  padding: 0.625rem 1.25rem;
+  background-color: #303030;
+  color: white;
+}
+.footer_bottom .social .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+.footer_bottom .social .icons div {
+  color: var(--color-primary);
+  font-weight: bold;
+}
