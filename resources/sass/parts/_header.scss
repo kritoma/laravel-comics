@@ -1,0 +1,10 @@
+.header_top {
+    background-color: var(--color-primary);
+
+    .content_header_top {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+}
+
