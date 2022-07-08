@@ -18,4 +18,13 @@ Route::get('/', function () {
 
 
     return view('home', compact('comics'));
-});
+})->name('home');
+
+Route::get('product/{index}', function ($index) {
+    $comics = config('comics');
+
+    $product = $comics[$index];
+
+    return view('home', compact('product'));
+})->name('product');
+

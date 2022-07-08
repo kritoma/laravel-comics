@@ -11,10 +11,12 @@
         <div class="container relative">
             <button class="btn_current">CURRENT SERIES</button>
             <ul class="cards">
-                @foreach ($comics as $elm) 
+                @foreach ($comics as $index => $elm) 
                     <li class="card">
-                        <img src="{{$elm['thumb']}}" alt="{{$elm['title']}}">
-                        <h3>{{$elm['title']}}</h3>
+                        <a href="{{route('product', ['index' => $index])}}">
+                            <img src="{{$elm['thumb']}}" alt="{{$elm['title']}}">
+                            <h3>{{$elm['title']}}</h3>
+                        </a>
                     </li>
                 @endforeach 
                 </ul>

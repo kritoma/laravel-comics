@@ -78,6 +78,10 @@ body {
   width: calc(16.6666666667% - 20px);
   color: white;
 }
+.current_series .cards .card a {
+  text-decoration: none;
+  color: white;
+}
 .current_series .cards .card img {
   width: 100%;
 }
@@ -140,4 +144,27 @@ body {
 .footer_bottom .social .icons div {
   color: var(--color-primary);
   font-weight: bold;
+}
+
+.product .barra_blu {
+  background-color: var(--color-primary);
+  min-height: 100px;
+}
+.product .barra_blu .img_product {
+  width: calc(16.6666666667% - 20px);
+  position: relative;
+  color: white;
+}
+.product .barra_blu .img_product span {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--color-primary);
+  padding: 8px 12px;
+}
+.product .barra_blu .img_product img {
+  width: 100%;
+}
+.product .barra_blu .img_product div {
+  background-color: var(--color-primary);
 }

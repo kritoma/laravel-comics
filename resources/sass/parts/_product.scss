@@ -1,0 +1,30 @@
+.product {
+
+    .barra_blu{
+        background-color: var(--color-primary);
+        min-height: 100px;
+
+        .img_product {
+            width: calc(100% / 6 - 20px);
+            position: relative;
+            color: white;
+
+            span {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-color: var(--color-primary);
+                padding: 8px 12px;
+
+            }
+
+            img{
+                width: 100%;
+            }
+
+            div {
+                background-color: var(--color-primary);
+            }
+        }
+    }
+}
