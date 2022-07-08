@@ -36,8 +36,42 @@
                 </div>
             </div>
         </div>
-        <div class="">
-
+        <div class="info_product">
+            <div class="container">
+                <div class="info_flex">
+                    <div class="talents">
+                        <h3>Talent</h3>
+                        <div class="tablet">
+                            <div>Art by:</div>
+                            @foreach ($prodotto['artists'] as $artist)
+                                <span>{{$artist}}</span>
+                            @endforeach
+                        </div>
+                        <div class="tablet">
+                            <div>written by:</div>
+                            @foreach ($prodotto['writers'] as $writer)
+                                <span>{{$writer}},</span>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <h3>Specs</h3>
+                        <div class="tablet">
+                            <div>Series:</div>
+                            <div>{{$prodotto['series']}}</div>
+                        </div>
+                        <div class="tablet">
+                            <div>U.S. Price:</div>
+                            <div>{{$prodotto['price']}}</div>
+                        </div>
+                        <div class="tablet">
+                            <div>On Sale Date:</div>
+                            <div>{{$prodotto['sale_date']}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 @endsection

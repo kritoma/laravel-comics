@@ -217,3 +217,18 @@ body {
 .product .content_product_right h4 {
   text-align: right;
 }
+.product .info_product {
+  background-color: #f6f6f6;
+}
+.product .info_product .info_flex {
+  display: flex;
+  gap: 1.25rem;
+}
+.product .info_product .info_flex .tablet {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+.product .info_product .info_flex .talents, .product .info_product .info_flex .specs {
+  width: 50%;
+}
