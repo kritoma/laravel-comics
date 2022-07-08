@@ -16,15 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics');
 
-
-    return view('home', compact('comics'));
+    return view('home', compact('comics') );
 })->name('home');
 
 Route::get('product/{index}', function ($index) {
     $comics = config('comics');
 
-    $product = $comics[$index];
+    $prodotto = $comics[$index];
 
-    return view('home', compact('product'));
+    return view('product', compact('prodotto'));
 })->name('product');
 
