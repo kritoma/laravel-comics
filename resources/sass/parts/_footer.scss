@@ -1,3 +1,46 @@
+.footer_top {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    height: 450px;
+    overflow: hidden;
+   
+
+    &_left {
+        display: flex;
+        gap: 1.25rem;
+        width: 50%;
+        
+        h3{
+            color: white;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            color: #959595;
+            
+            li{
+                margin: 8px 0;
+            }
+        }
+        
+    }
+    .flex {
+        display: flex;
+    }
+
+    .logo_footer {
+        width: 50%;
+
+        img {
+            position: relative;
+            bottom: 90px;
+        }
+    }
+}
+
 .footer_bottom {
     background-color: #303030;
     padding: 30px;

@@ -121,6 +121,41 @@ body {
   height: 60px;
 }
 
+.footer_top {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  height: 450px;
+  overflow: hidden;
+}
+.footer_top_left {
+  display: flex;
+  gap: 1.25rem;
+  width: 50%;
+}
+.footer_top_left h3 {
+  color: white;
+  margin: 20px 0;
+}
+.footer_top_left ul {
+  list-style: none;
+  color: #959595;
+}
+.footer_top_left ul li {
+  margin: 8px 0;
+}
+.footer_top .flex {
+  display: flex;
+}
+.footer_top .logo_footer {
+  width: 50%;
+}
+.footer_top .logo_footer img {
+  position: relative;
+  bottom: 90px;
+}
+
 .footer_bottom {
   background-color: #303030;
   padding: 30px;
@@ -226,9 +261,25 @@ body {
 }
 .product .info_product .info_flex .tablet {
   display: flex;
-  gap: 0.625rem;
   flex-wrap: wrap;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid lightgray;
+}
+.product .info_product .info_flex .tablet div:nth-child(1) {
+  width: 50%;
+}
+.product .info_product .info_flex .tablet div:nth-child(2) {
+  width: 50%;
 }
 .product .info_product .info_flex .talents, .product .info_product .info_flex .specs {
+  width: 50%;
+}
+.product .info_product .info_flex h3 {
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+  color: #003f80;
+}
+.product .info_product .info_flex .blue {
+  color: var(--color-primary);
   width: 50%;
 }

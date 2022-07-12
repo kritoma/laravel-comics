@@ -99,13 +99,34 @@
 
             .tablet {
                 display: flex;
-                gap: .625rem;
                 flex-wrap: wrap;
+                padding: 1.25rem 0;
+                border-bottom: 1px solid lightgray ;
+
+                div:nth-child(1) {
+                    width: 50%
+                }
+
+                div:nth-child(2) {
+                    width: 50%;
+                } 
             }
            
             .talents, .specs {
                 width: 50%;
             }
+
+            h3 {
+                padding: 20px 0;
+                border-bottom: 1px solid lightgray;
+                color: #003f80;
+            }
+
+            .blue{
+                color: var(--color-primary);
+                width: 50%;
+            }
         }
     }
+
 }
